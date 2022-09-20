@@ -33,8 +33,8 @@ export default function Metrics() {
             }}>
 
             <div>Total Images: {total}</div>
-            <div>Good Images: {goodCount}</div>
-            <div>Bad Images: {badCount}</div>
+            <div>Good: {goodCount}</div>
+            <div>Bad: {badCount}</div>
           </Container>
         </Grid>    
         <Grid item xs={12} sm={8} md={12} xl={8}>
