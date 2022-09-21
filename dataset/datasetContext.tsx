@@ -31,7 +31,7 @@ export default function DatasetProvider(props: DatasetProviderProps) {
   };
 
   const getItemTypeCount = (type: string): number => {
-    return dataset.filter((item) => item.group === type).length;
+    return dataset.filter((item) => item.group.toLocaleUpperCase() === type.toLocaleUpperCase()).length;
   }
 
   return (
@@ -40,8 +40,8 @@ export default function DatasetProvider(props: DatasetProviderProps) {
         dataset,
         setItemGroup: setGroup,
         getItemTotalCount: () => dataset.length,
-        getItemGoodCount: () => getItemTypeCount('good'),
-        getItemBadCount: () => getItemTypeCount('bad'),
+        getItemGoodCount: () => getItemTypeCount('GOOD'),
+        getItemBadCount: () => getItemTypeCount('BAD'),
         getItemNoneCount: () => getItemTypeCount(''),
       }}>
       {props.children}

@@ -20,14 +20,14 @@ export default function Item(props: ItemProps) {
   const goodButton = (
     <Button 
       size="small" color="success" 
-      variant={(props.data.group === 'good') ? 'contained' : 'outlined'}
-      onClick={() => setGroup('good')}
+      variant={(props.data.group.toLocaleUpperCase() === 'GOOD') ? 'contained' : 'outlined'}
+      onClick={() => setGroup('GOOD')}
     >Good</Button>
   );
   const badButton = (
     <Button size="small" color="error"
-      variant={(props.data.group === 'bad') ? 'contained' : 'outlined'}
-      onClick={() => setGroup('bad')}
+      variant={(props.data.group.toLocaleUpperCase() === 'BAD') ? 'contained' : 'outlined'}
+      onClick={() => setGroup('BAD')}
     >Bad</Button>
   );
   const unGroupButton = (
