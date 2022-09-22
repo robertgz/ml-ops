@@ -36,4 +36,19 @@ export const Dataset: Schema[] = [
     filePath: '/images/good_images/good_image_3.jpeg',
     group: 'good',
   },
+  {
+    id: 'd4a9ee13-2316-4a11-8930-142c3d4d511a',
+    filePath: '/images/ungrouped_images/depositphotos_9690955-stock-photo-gold-apple.jpg',
+    group: '',
+  },
+  {
+    id: '4764eab1-ff2f-4229-bbb6-ef031429beb3',
+    filePath: '/images/ungrouped_images/Rave-apple-Stemilt.jpg',
+    group: '',
+  },
+  {
+    id: '8a4e9659-0e90-4f52-9e37-7ddac9c404c8',
+    filePath: '/images/ungrouped_images/istockphoto-184276818-612x612.jpg',
+    group: '',
+  },
 ];
